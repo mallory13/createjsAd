@@ -23,7 +23,7 @@
                 console.log("inside skills function");
                 var skills, skill1, skill2, skill3, skill4, skill5, skill6;
 
-                document.getElementById("skills").innerHTML = "Skills:";
+                // document.getElementById("skills").innerHTML = "Skills:";
                 document.getElementById("skill1").innerHTML = "Ability to work with others as a team player towards a common goal";
                 document.getElementById("skill2").innerHTML = "Excellent written and verbal communication skills with an eye for detail";
                 document.getElementById("skill3").innerHTML = "Positive and accommodating personality";
@@ -66,7 +66,7 @@
                 console.log("inside goals function");
                 var goals, goal1, goal2, goal3;
 
-                document.getElementById("goals").innerHTML = "Goals:";
+                // document.getElementById("goals").innerHTML = "Goals:";
                 document.getElementById("goal1").innerHTML = "Travel the world";
                 document.getElementById("goal2").innerHTML = "Retire at age 40";
                 document.getElementById("goal3").innerHTML = "Volunteer abroad";
