@@ -131,8 +131,8 @@
  //CreateJS Section ++++++++++++++++++++++++++++++++++++
 
     //global variables
-    var screenWidth = 120;
-    var screenHeight = 600;
+    var screenWidth = 468;
+    var screenHeight = 60;
 
     // reference to canvas element
     var canvas = document.getElementById("canvas");
