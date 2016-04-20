@@ -117,3 +117,8 @@ img{
 .nav-bar .about a { background:url("images/about.svg") no-repeat 0px -2px transparent; }
 .nav-bar .education a { background:url("images/education.svg") no-repeat 0px -2px transparent; }
 .nav-bar .contact a { background:url("images/contact.svg") no-repeat 0px -2px transparent; }
+
+
+#canvas {
+    border: 1px dashed black;
+}
