@@ -139,8 +139,8 @@
     // create a stage container object
     var stage = new createjs.Stage(canvas);
 
-    var helloLabel = null;
-    var helloLabelMove = 5;
+    var newLabel = null;
+    var newLabel = 5;
 
     var button = null;
     var buttonMove = 5;
@@ -163,9 +163,9 @@
     // runs every frame
     function animationLoop() {
 
-        helloLabel.rotation += 5;
+        newLabel.rotation += 5;
         button.rotation += 5;
-        helloLabel.x += helloLabelMove;
+        newLabel.x += newLabelMove;
         button.x += buttonMove;
 
         if (buttonIsGrowing) {
@@ -186,8 +186,8 @@
             }
         }
 
-        if ((helloLabel.x >= screenWidth) || (helloLabel.x <= 0)) {
-            helloLabelMove *= -1;
+        if ((newLabel.x >= screenWidth) || (newLabel.x <= 0)) {
+            newLabelMove *= -1;
             buttonMove *= -1;
         }
 
@@ -197,7 +197,7 @@
 
     // this is where all the magic happens
     function main() {
-        button = new createjs.Bitmap('../Assets/images/button.jpg');
+        button = new createjs.Bitmap('../images/buyButton.png');
         button.regX = button.getBounds().width * 0.5;
         button.regY = button.getBounds().height * 0.5;
         button.scaleX = 0.3;
@@ -206,22 +206,29 @@
         button.y = screenHeight * 0.5;
         stage.addChild(button);
 
-        helloLabel = new createjs.Text("Hello World!", "30px Consolas", "#000000");
-        helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
-        helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
-        helloLabel.x = screenWidth * 0.5;
-        helloLabel.y = screenHeight * 0.5;
-        stage.addChild(helloLabel);
+        newLabel = new createjs.Text("NEW", "30px Consolas", "#000000");
+        newLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
+        newLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
+        newLabel.x = screenWidth * 0.5;
+        newLabel.y = screenHeight * 0.5;
+        stage.addChild(newLabel);
 
         button.on("click", function() {
-            if(helloLabel.text === "Clicked!") {
-                helloLabel.text = "Hello World!";
-            } else {
-                helloLabel.text = "Clicked!";
-            }
             
-            helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
-            helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
+            // if button is clicked take to product page
+            window.location = "http://sellingout.azurewebsites.net";
+            
+            
+            
+            
+            // if(newLabel.text === "Clicked!") {
+            //     newLabel.text = "Hello World!";
+            // } else {
+            //     newLabel.text = "Clicked!";
+            // }
+            
+            // newLabel.regX = newLabel.getMeasuredWidth() * 0.5;
+            // newLabel.regY = newLabel.getMeasuredHeight() * 0.5;
         });
 
         button.on('mouseover', function() {

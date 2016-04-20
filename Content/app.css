@@ -120,9 +120,9 @@ img{
 
 
 #canvas {
-    border: 1px dashed black;
-    height: 60px;
-    width: 468px;
+    border: 1px solid black;
+    /*height: 60px;
+    width: 468px;*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#92d3be+0,64efba+29,24e59e+53,03a585+100 */
 background: rgb(146,211,190); /* Old browsers */
 background: -moz-linear-gradient(left,  rgba(146,211,190,1) 0%, rgba(100,239,186,1) 29%, rgba(36,229,158,1) 53%, rgba(3,165,133,1) 100%); /* FF3.6-15 */
