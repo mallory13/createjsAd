@@ -8,7 +8,7 @@
     request.addEventListener('readystatechange', function() {
         // wait for file to finish loading
         if (request.readyState === 4 && request.status === 200) {
-            var projects = {};
+            var education = {};
 
             // read in the json object
             education = JSON.parse(request.responseText);
