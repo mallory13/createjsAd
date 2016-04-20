@@ -11,13 +11,13 @@
             var projects = {};
 
             // read in the json object
-            projects = JSON.parse(request.responseText);
+            education = JSON.parse(request.responseText);
 
             // declare local paragraph array container
             var paragraphArray = [];
             
             // read in the paragraphs array from the json object
-            paragraphArray = projects.paragraphs;
+            paragraphArray = education.paragraphs;
             
             // store length of the paragraphArray into a variable
             var paragraphArrayLength = paragraphArray.length;
