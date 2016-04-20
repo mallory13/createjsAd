@@ -121,4 +121,13 @@ img{
 
 #canvas {
     border: 1px dashed black;
+    height: 60px;
+    width: 468px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#92d3be+0,64efba+29,24e59e+53,03a585+100 */
+background: rgb(146,211,190); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(146,211,190,1) 0%, rgba(100,239,186,1) 29%, rgba(36,229,158,1) 53%, rgba(3,165,133,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(146,211,190,1) 0%,rgba(100,239,186,1) 29%,rgba(36,229,158,1) 53%,rgba(3,165,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(146,211,190,1) 0%,rgba(100,239,186,1) 29%,rgba(36,229,158,1) 53%,rgba(3,165,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92d3be', endColorstr='#03a585',GradientType=1 ); /* IE6-9 */
+
 }
