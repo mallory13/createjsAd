@@ -143,7 +143,7 @@
     var stage = new createjs.Stage(canvas);
 
     var newLabel = null;
-    var newLabel = 5;
+    var newLabelMove = 5;
 
     var button = null;
     var buttonMove = 5;
@@ -200,13 +200,13 @@
         stage.update();
     }
 
-    // this is where all the magic happens
+    // add product image, buy button and new label to the stage
     function main() {
         sup = new createjs.Bitmap('../images/sup.png');
         sup.regX = sup.getBounds().width * 0.5;
         sup.regY = sup.getBounds().height * 0.5;
-        sup.scaleX = 0.3;
-        sup.scaleY = 0.3;
+        sup.scaleX = 0.2;
+        sup.scaleY = 0.2;
         sup.x = screenWidth * 0.5;
         sup.y = screenHeight * 0.5;
         stage.addChild(button);
@@ -233,16 +233,6 @@
             window.location = "http://sellingout.azurewebsites.net";
             
             
-            
-            
-            // if(newLabel.text === "Clicked!") {
-            //     newLabel.text = "Hello World!";
-            // } else {
-            //     newLabel.text = "Clicked!";
-            // }
-            
-            // newLabel.regX = newLabel.getMeasuredWidth() * 0.5;
-            // newLabel.regY = newLabel.getMeasuredHeight() * 0.5;
         });
 
         button.on('mouseover', function() {
@@ -258,41 +248,9 @@
     window.onload = init;
 
 
-
-
 })();
 
 
-//check that form input is valid
-// function validateForm() {
-//     var fname = document.forms["contactForm"]["fname"].value;
-//     var lname = document.forms["contactForm"]["lname"].value;
-//     var email = document.forms["contactForm"]["email"].value;
-//     var message = document.forms["contactForm"]["lname"].value;
-
-//     if (fname == null || fname == "") {
-//         alert("First name must be filled out");
-//         return false;
-//     }
-
-//     if (lname == null || lname == "") {
-//         alert("Last name must be filled out");
-//         return false;
-//     }
-
-//     if (email == null || email == "") {
-//         alert("You must enter a valid email address");
-//         return false;
-//     }
-
-//     if (message == null || message == "") {
-//         alert("You must enter a message");
-//         return false;
-//     }
-//     else {
-//         return true;
-//     }
-// };
 
 
 
