@@ -148,6 +148,8 @@
     var button = null;
     var buttonMove = 5;
     var buttonIsGrowing = true;
+    
+    var sup = null;
 
     function init() {
         console.log("Initialization");
@@ -200,6 +202,15 @@
 
     // this is where all the magic happens
     function main() {
+        sup = new createjs.Bitmap('../images/sup.png');
+        sup.regX = sup.getBounds().width * 0.5;
+        sup.regY = sup.getBounds().height * 0.5;
+        sup.scaleX = 0.3;
+        sup.scaleY = 0.3;
+        sup.x = screenWidth * 0.5;
+        sup.y = screenHeight * 0.5;
+        stage.addChild(button);
+        
         button = new createjs.Bitmap('../images/buyButton.png');
         button.regX = button.getBounds().width * 0.5;
         button.regY = button.getBounds().height * 0.5;
@@ -209,9 +220,9 @@
         button.y = screenHeight * 0.5;
         stage.addChild(button);
 
-        newLabel = new createjs.Text("NEW", "30px Consolas", "#000000");
-        newLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
-        newLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
+        newLabel = new createjs.Text("NEW", "16px Consolas", "#000000");
+        newLabel.regX = newLabel.getMeasuredWidth() * 0.5;
+        newLabel.regY = newLabel.getMeasuredHeight() * 0.5;
         newLabel.x = screenWidth * 0.5;
         newLabel.y = screenHeight * 0.5;
         stage.addChild(newLabel);
@@ -243,6 +254,7 @@
         })
     }
 
+//wait for window to load then call init
     window.onload = init;
 
 
